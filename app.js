@@ -91,9 +91,9 @@ passport.deserializeUser(User.deserializeUser());
 
 
 
-// app.get("/",(req,res)=>{
-//     res.send("working");
-// })
+app.get("/",(req,res)=>{
+    res.redirect("/listings");
+})
 
 
 app.use((req,res,next)=>{
